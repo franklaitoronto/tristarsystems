@@ -1,0 +1,119 @@
+.smarthomeSplash{
+	position:relative;
+	color:black;
+}
+.smarthomeSplashLeft{
+	display:inline-block;
+	width:870px;
+	height:570px;
+	position:relative;
+	float:left;
+	
+	z-index:1;/*Makes sure it's below everything else*/
+	
+	border-bottom:solid;
+	border-width:2px;
+	border-color:grey;
+	margin-bottom:0;
+}
+.smarthomeSplashRight{
+	display:inline-block;
+	width:270px;
+	height:270px;
+	float:right;
+}
+.smartHomeSplashButton{
+	position:absolute;
+}
+.smartHomeSplashButton img{
+	position:relative;
+	cursor: pointer;
+	
+	/* Transitioning Effect */
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+	
+	z-index:3;/*Makes sure it's on the middle of everything else*/
+}
+.smarthomeSplashInputButton {
+	display:none;
+}
+.smarthomeSplashInputButton:checked + label > .smartHomeSplashElement{
+	display:block;
+}
+.smarthomeSplashInputButton:checked + label > img{
+	-ms-transform: rotate(45deg) scale(1.5, 1.5); /* IE 9 */
+    -webkit-transform: rotate(45deg) scale(1.5, 1.5); /* Safari */
+    transform: rotate(45deg) scale(1.5, 1.5);
+	
+}
+.smartHomeSplashElement{
+	position:relative;
+	display:none;
+	
+	width:300px;
+	min-height:200px;
+	
+	border:solid;
+	border-width:2px;
+	border-color:#ff1111;
+	
+	padding:15px;
+	background-color:white;
+	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index:5;/*Makes sure it's on top of everything else*/
+}
+.smartHomeSplashElement h1{
+	font-size: 1em;
+}
+#doorbell{
+	bottom :50px;
+	left: -5px;
+}
+#lock{
+	bottom:50px;
+	left: 20px;
+}
+#securitypanel{
+	bottom:100px;
+	left:90px;
+}
+#theromostat{
+	bottom:100px;
+	left:250px;
+}
+#garage{
+	bottom:120px;
+	left:450px;
+}
+#imagesensor{
+	bottom:250px;
+	left:20px;
+}
+#smokedetector{
+	bottom:265px;
+	left:320px;
+}
+#watersensor{
+	bottom:290px;
+	left:250px;
+}
+#videocamera{
+	bottom:380px;
+	left:280px;
+}
+#tempsensor{
+	bottom:390px;
+	left:500px;
+}
+#lightcontrol{
+	bottom:480px;
+	left:100px;
+}
+#windowsensor{
+	bottom:500px;
+	left:300px;
+}
